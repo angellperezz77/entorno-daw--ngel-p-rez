@@ -1,4 +1,15 @@
 {
   "name": "Entorno DAW",
-  "image": "mcr.microsoft.com/devcontainers/base:jammy"
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {},
+    "ghcr.io/devcontainers/features/node:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-debug"
+      ]
+    }
+  }
 }
